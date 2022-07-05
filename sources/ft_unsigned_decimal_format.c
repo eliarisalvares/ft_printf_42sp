@@ -6,11 +6,17 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:00:22 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:03:05 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 23:03:35 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
+
+/**
+ * @brief This function outputs a decimal number with no sign. As the number is
+ * unsigned, the output is always positive so there is no need to treat negative
+ * numbers.
+ */
 
 int	ft_unsigned_decimal_format(unsigned int value)
 {

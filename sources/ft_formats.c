@@ -6,11 +6,16 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:00:22 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:18:55 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 22:54:30 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
+
+/**
+ * @brief This function receives a format character and returns the
+ * corresponding function to be used to print the argument.
+ */
 
 int	ft_formats(int c, va_list args)
 {

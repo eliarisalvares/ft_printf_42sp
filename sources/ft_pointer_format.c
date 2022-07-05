@@ -6,12 +6,15 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 18:47:38 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:22:48 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 23:01:56 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
+/**
+ * @brief This function outputs the prefix needed by the pointer format.
+ */
 static int	ft_print_prefix(char *str)
 {
 	int	i;
@@ -20,6 +23,12 @@ static int	ft_print_prefix(char *str)
 	return (i);
 }
 
+/**
+ * @brief The printf pointer format will output a pointer's address in
+ * hexadecimal. The address will be prefixed by 0x. The string will be converted
+ * to a hexadecimal format using the ft_itoa_base function that takes a base as
+ * a parameter.
+ */
 int	ft_pointer_format(void *ptr_address)
 {
 	int				i;

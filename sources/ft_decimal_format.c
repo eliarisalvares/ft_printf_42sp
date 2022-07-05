@@ -6,11 +6,18 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 18:36:30 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 18:53:43 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 22:54:23 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
+
+/**
+ * @brief A function to check if the number to be printed is negative is needed
+ * to assure the correct output as the "-" needs to be printed before the
+ * number. Also, as the absolute value of INT_MIN is greater than INT_MAX, this
+ * must be treated separately.
+ */
 
 static int	ft_is_negative(int *value)
 {
@@ -33,6 +40,10 @@ static int	ft_is_negative(int *value)
 	}
 	return (i);
 }
+
+/**
+ * @brief This function will output a decimal number.
+ */
 
 int	ft_decimal_format(int value)
 {

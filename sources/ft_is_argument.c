@@ -6,11 +6,16 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/03 23:01:38 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:02:35 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 22:55:47 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
+
+/**
+ * @brief This function checks if the character is a valid format character for
+ * the printf function.
+ */
 
 int	ft_is_argument(int c)
 {

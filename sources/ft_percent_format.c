@@ -6,12 +6,15 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:00:22 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:02:38 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 22:57:53 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
+/**
+ * @brief This function outputs a single percent character.
+ */
 int	ft_percent_format(char c)
 {
 	int	i;

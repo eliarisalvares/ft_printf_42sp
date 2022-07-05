@@ -6,11 +6,17 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 22:00:22 by elraira-          #+#    #+#             */
-/*   Updated: 2021/10/05 14:03:10 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/07/04 23:05:24 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
+
+/**
+ * @brief This function outputs a upper case hexadecimal number using a itoa
+ * function that takes a base 16 as a parameter. HEXADECIMAL_U_BASE is defined
+ * in ft_printf.h and all the alphabetic characters are in the range A-F.
+ */
 
 int	ft_upper_case_hexadecimal_format(unsigned int value)
 {
